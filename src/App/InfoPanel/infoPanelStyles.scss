@@ -1,0 +1,11 @@
+.InfoPanel {
+    font-size: 1.1em;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 225px;
+    background-color: var(--main-1);
+    border-left: 1px solid var(--main-3);
+}

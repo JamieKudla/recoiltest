@@ -1,0 +1,59 @@
+.ItemInfo {
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+        display: grid;
+        grid-template-rows: 32px;
+        height: 32px;
+        grid-template-columns: repeat(28,8px);
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    &-stat {
+        grid-column-end: span 11;
+        display: flex;
+        align-items: center;
+
+        &--single {
+            & + & {
+                grid-column-start: 13;
+            }
+        }
+
+        &--swatch {
+            grid-column-end: span 18;
+            grid-column-start: 2;
+        }
+
+        &--strokeWidth {
+            grid-column-start: 21;
+            grid-column-end: 26;
+        }
+    }
+
+    &-statLabel {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--main-6);
+        font-weight: 800;
+    }
+
+    &-section {
+        padding: 8px 0;
+        border-bottom: 1px solid var(--main-3);
+    }
+
+    &-sectionName {
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        align-self: center;
+        grid-column-start: 2;
+        grid-column-end: span 10;
+    }
+}

@@ -1,0 +1,16 @@
+.Toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    &-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        margin: 1em;
+        background-color: rgba(0, 0, 0, .2);
+        text-align: center;
+        cursor: pointer;
+    }
+}

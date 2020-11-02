@@ -1,0 +1,49 @@
+$knob-size: 8px;
+$half-knob: $knob-size / 2;
+
+.ItemControls {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &-knob {
+        position: absolute;
+        width: $knob-size;
+        height: $knob-size;
+        border: 1px solid var(--purple);
+        background-color: white;
+        box-sizing: border-box;
+
+        &--top {
+            top: calc(0px - #{$half-knob});
+        }
+
+        &--bot {
+            bottom: calc(0px - #{$half-knob});
+        }
+
+        &--left {
+            left: calc(0px - #{$half-knob});
+        }
+
+        &--right {
+            right: calc(0px - #{$half-knob});
+        }
+
+        &--top#{&}--left {
+            cursor: nw-resize;
+        }
+
+        &--top#{&}--right {
+            cursor: ne-resize;
+        }
+
+        &--bot#{&}--left {
+            cursor: sw-resize;
+        }
+
+        &--bot#{&}--right {
+            cursor: se-resize;
+        }
+    }
+}
